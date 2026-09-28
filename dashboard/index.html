@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reliance Industries – Financial Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div>
+            <h1>Reliance Industries Ltd.</h1>
+            <p class="subtitle">
+                Consolidated Financial Data · Source: Screener.in
+            </p>
+        </div>
+
+         
+    </div>
+</header>
+
+
+<!-- Navigation -->
+
+<nav class="tabs" role="tablist">
+
+    <button class="tab active" data-tab="pl">
+        Profit &amp; Loss
+    </button>
+
+    <button class="tab" data-tab="bs">
+        Balance Sheet
+    </button>
+
+    <button class="tab" data-tab="cf">
+        Cash Flow
+    </button>
+
+    <button class="tab" data-tab="rat">
+        Ratios
+    </button>
+
+    <button class="tab" data-tab="qtr">
+        Quarterly
+    </button>
+
+    <button class="tab" data-tab="validation">
+        Validation
+    </button>
+
+</nav>
+
+
+<main>
+
+    <!-- Profit & Loss -->
+
+    <section id="tab-pl" class="tab-panel active">
+
+        <h2>
+            Profit &amp; Loss
+            <span class="unit-label">(₹ Crore)</span>
+        </h2>
+
+        <div id="pl-container" class="table-wrapper">
+            <p class="placeholder">Loading…</p>
+        </div>
+
+    </section>
+
+
+    <!-- Balance Sheet -->
+
+    <section id="tab-bs" class="tab-panel">
+
+        <h2>
+            Balance Sheet
+            <span class="unit-label">(₹ Crore)</span>
+        </h2>
+
+        <div id="bs-container" class="table-wrapper">
+            <p class="placeholder">Loading…</p>
+        </div>
+
+    </section>
+
+
+    <!-- Cash Flow -->
+
+    <section id="tab-cf" class="tab-panel">
+
+        <h2>
+            Cash Flow
+            <span class="unit-label">(₹ Crore)</span>
+        </h2>
+
+        <div id="cf-container" class="table-wrapper">
+            <p class="placeholder">Loading…</p>
+        </div>
+
+    </section>
+
+
+    <!-- Ratios -->
+
+    <section id="tab-rat" class="tab-panel">
+
+        <h2>Financial Ratios</h2>
+
+        <div id="rat-container" class="table-wrapper">
+            <p class="placeholder">Loading…</p>
+        </div>
+
+    </section>
+
+
+    <!-- Quarterly -->
+
+    <section id="tab-qtr" class="tab-panel">
+
+        <h2>
+            Quarterly Data
+            <span class="unit-label">(₹ Crore)</span>
+        </h2>
+
+        <div id="qtr-container" class="table-wrapper">
+            <p class="placeholder">Loading…</p>
+        </div>
+
+    </section>
+
+
+    <!-- Validation -->
+
+    <section id="tab-validation" class="tab-panel">
+
+        <h2>Data Validation</h2>
+
+        <div class="validation-grid">
+
+
+            <!-- Pipeline Status -->
+
+            <div class="validation-card">
+
+                <h3>Pipeline Status</h3>
+
+                <div id="dataset-check">
+                    Checking datasets...
+                </div>
+
+            </div>
+
+
+            <!-- Internal Validation -->
+
+            <div class="validation-card">
+
+                <h3>Internal Validation</h3>
+
+                <div id="profit-check">
+                    Checking Profit &amp; Loss...
+                </div>
+
+                <div id="opm-check">
+                    Checking OPM...
+                </div>
+
+            </div>
+
+
+            <!-- External Validation -->
+
+            <div class="validation-card">
+
+                <h3>External Cross-Check</h3>
+
+                <div id="external-check">
+                    Checking external validation...
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        Data scraped from
+        <a
+            href="https://www.screener.in/company/RELIANCE/consolidated/"
+            target="_blank">
+            Screener.in
+        </a>.
+        Values in ₹ Crore unless stated.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
